@@ -10,7 +10,7 @@ $type = $_POST['type'];
 $capaciteit = $_POST['capaciteit'];
 if(!is_numeric($capaciteit))
 {
-    $errors[] = "Vul voor capaciteit een geldig getal in";
+    $errors[] = "Vul voor capaciteit een geldig getal in";  
 }
 if(isset($_POST['prioriteit']))
 {
@@ -23,7 +23,7 @@ else
 $melder = $_POST['melder'];
 if(empty($melder))
 {
-    $errors[] = "Vul de melders naam in."
+    $errors[] = "Vul de melders naam in.";
 }
 $overig = $_POST['overig'];
 
