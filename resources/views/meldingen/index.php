@@ -35,7 +35,7 @@
                 <th>Overige info</th>
                 <th>Prioriteit</th>
             </tr>
-            <?php foreach ($meldingen as $melding): ?>
+            <?php foreach ($meldingen as $melding): ?>  
                 <tr>
                     <td>
                         <?php echo $melding['attractie']; ?>
