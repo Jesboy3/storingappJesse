@@ -19,7 +19,6 @@
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
                 <input type="text" name="attractie" id="attractie" class="form-input" placeholder="Attractie">
-                <input type="text" name="title" value="<?php echo$item['title']; ?>">
             </div>
             
             <div class="form-group">
@@ -60,7 +59,7 @@
             </div>
         
 
-            <input type="submit" value="Verstuur melding">
+            <input type="submit" value="Opslaan">
 
         </form>
     </div>

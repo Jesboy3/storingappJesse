@@ -34,6 +34,7 @@
                 <th>Melder</th>
                 <th>Overige info</th>
                 <th>Prioriteit</th>
+                <th>Aanpassen</th>
             </tr>
             <?php foreach ($meldingen as $melding): ?>  
                 <tr>
@@ -57,6 +58,7 @@
                         }
                         ?>
                     </td>
+                    <td><a href="edit.php">Aanpassen</a></td>
 
                 </tr>
             <?php endforeach; ?>

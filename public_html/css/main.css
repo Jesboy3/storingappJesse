@@ -352,4 +352,25 @@ label{
     page-break-after: avoid;
   }
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+td, th {
+  text-align: left;
+  border: 1px solid white; /* Optional: Add border to cells */
+
+}
+th {
+  background-color:  #b3b2b2;
+}
+
+tr:hover {
+  background-color: #999898;
+}
+
+tr:nth-child(odd) {
+  background-color: #cacacace;
+}
 
