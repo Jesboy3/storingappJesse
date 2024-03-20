@@ -36,8 +36,10 @@
                 <th>Prioriteit</th>
                 <th>Aanpassen</th>
             </tr>
-            <?php foreach ($meldingen as $melding): ?>  
+            <?php foreach ($meldingen as $melding): ?>
                 <tr>
+
+                
                     <td>
                         <?php echo $melding['attractie']; ?>
                     </td>
