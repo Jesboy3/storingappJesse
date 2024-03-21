@@ -60,7 +60,9 @@
                         }
                         ?>
                     </td>
-                    <td><a href="edit.php">Aanpassen</a></td>
+                    <td>
+                        <?php echo "<a href='edit.php?id={$melding  ['id']}'>Aanpassen"; ?>
+                    </td>
 
                 </tr>
             <?php endforeach; ?>
