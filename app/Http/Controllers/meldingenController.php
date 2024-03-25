@@ -46,11 +46,45 @@ if ($action == "create") {
 
     header("Location: ../../../resources/views/meldingen/index.php?msg=Melding opgeslagen");
 }
-if ($action == "update")
-{
+if ($action == "update") {
 
-}
-if ($action == "delete")
-{
+
+    // Dit haalt de variablen op 
+    $id = $_POST['id'];
+
+    $capaciteit = $_POST['capaciteit'];
+
+    $melder = $_POST['melder'];
+
+    if (isset ($_POST['prioriteit'])) {
+        $prioriteit = 0;
+    } else {
+        $prioriteit = 1;
+    }
+    $overig = $_POST['overig'];
     
+    // tot en met hier
+
+    //1. Verbinding
+    require_once '../../../config/conn.php';
+
+    // Query 
+    $query = "UPDATE meldingen SET capaciteit = :capaciteit, melder = :melder, prioriteit = :prioriteit, overige_info = :overige_info WHERE id = :id ";
+
+    // prepare
+    $statement = $conn->prepare($query);
+
+    // execute
+    $statement->execute([
+        ":capaciteit" => $capaciteit,
+        ":melder" => $melder,
+        ":prioriteit" => $prioriteit,
+        ":overige_info" => $overig,
+        ":id" => $id
+    ]);
+
+    header("Location: ../../../resources/views/meldingen/index.php?msg=Melding aangepast");
+}
+if ($action == "delete") {
+
 }
