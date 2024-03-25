@@ -11,8 +11,6 @@
 
     <?php require_once __DIR__.'/../components/header.php'; ?>
 
-    <input  type="hidden" name="action" value="create">
-
     <div class="container">
         <h1>Nieuwe melding</h1>
 
